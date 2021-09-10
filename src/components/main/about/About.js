@@ -4,7 +4,7 @@ import './about.css';
 function About() {
   return (
     <div className='About'>
-      <h1>STEFANO MANCA</h1>
+      <h2>SALUMIFICIO ARTIGIANALE MEI</h2>
       <section className='sectionAbout'>
         <p className='aboutText'>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet,

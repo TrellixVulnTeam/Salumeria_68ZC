@@ -1,0 +1,50 @@
+
+.salumeWrapper {
+  width: 26%;
+  height: 16%;
+  margin: 2%;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
+  background-color: white;
+  transition: all 0.4s ease-in-out;
+}
+.salumeWrapper:hover {
+  z-index: 2;
+  transform: scale(1.2);
+}
+.salumeText {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5% 0;
+  border-bottom: 2px solid black;
+}
+.salumeTitle {
+  font-weight: bold;
+}
+.salumeDifficulty {
+  color: brown;
+  font-weight: bolder;
+}
+.salumeImage {
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid black;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.salumeDescription {
+  display: none;
+  padding: 2%;
+  background-color: white;
+  color: black;
+  border-top: 1px solid black;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.salumeImage:hover ~ .salumeDescription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

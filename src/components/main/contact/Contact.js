@@ -27,12 +27,25 @@ export default function ContactUs() {
 
   return (
     <div className='Contact'>
+      <h2>Contattaci</h2>
+      <br />
+      <br />
+      <p>Per qualsiasi domanda non esitare a contttarci.</p>
+      <br />
+      <br />
+      <a href='tel:+393456380585' target='blank'>
+        <p>Tel: +39 345 638 0585</p>
+      </a>
+      <br />
+      <a href='mailto:salumificiomei@hotmail.it' target='blank'>
+        <p>Email: salumificiomei@hotmail.it</p>
+      </a>
       <form className='contact-form' onSubmit={sendEmail}>
-        <input type='text' placeholder='Name' name='name' />
-        <input type='email' placeholder='Email Adress' name='email' />
-        <input type='text' placeholder='Subject' name='subject' />
-        <textarea placeholder='Your message' name='message' />
-        <input type='submit' value='Send' />
+        <input type='text' placeholder='Nome' name='name' />
+        <input type='email' placeholder='Indirizzo Email' name='email' />
+        <input type='text' placeholder='Oggetto' name='subject' />
+        <textarea placeholder='Il tuo messaggio' name='message' />
+        <input type='submit' value='Invia' />
       </form>
     </div>
   );
