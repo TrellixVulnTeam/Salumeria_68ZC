@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@600&family=Fredericka+the+Great&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 :root {
   --main-white: #f0ecc9;
   --main-black: #503d2e;
@@ -14,15 +14,7 @@ h3,
 h4,
 h5,
 h6 {
-  /* font-family: 'Big Shoulders Stencil Display', cursive;
-  font-family: 'Fredericka the Great', cursive; */
-  font-family: 'sackbonesregular', 'Fredericka the Great',
-    'Big Shoulders Stencil Display', cursive;
-  src: url('./assets/webfontkit-20210731-073208/sackbones.woff2')
-      format('woff2'),
-    url('./assets/webfontkit-20210731-073208/sackbones.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'Rubik', sans-serif;
 }
 html {
   /* background-color: red; */
@@ -46,5 +38,6 @@ body {
   /* background-color: blue; */
   display: flex;
   flex-direction: row;
+
   /* justify-content: space-evenly; */
 }

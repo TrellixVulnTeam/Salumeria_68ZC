@@ -1,17 +1,26 @@
+import React from 'react';
 import './App.css';
+import { useState } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import Navbar from './components/header/Navbar';
+import Navbar from './components/sidebar/Navbar';
 import Main from './components/main/Main';
+import BurgerMenu from './components/burgerMenu/BurgerMenu';
+
+export const Context = React.createContext();
 
 function App() {
+  const [menuToogle, setMenuToogle] = useState(false);
+
   return (
-    <Router>        
-    <div className="App">
-      <Navbar />
-      <Main />
-      
-    </div>
-  </Router>
+    <Context.Provider value={{ menuToogle, setMenuToogle }}>
+      <Router>
+        <div className='App'>
+          <Navbar />
+          <BurgerMenu />
+          <Main />
+        </div>
+      </Router>
+    </Context.Provider>
   );
 }
 

@@ -1,4 +1,4 @@
-import './salume.css';
+import './salume.scss';
 import salumeData from './salumeData';
 
 const Salume = () => {

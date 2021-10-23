@@ -1,5 +1,7 @@
-import './main.css';
+import './main.scss';
 import { Switch, Route } from 'react-router-dom';
+import { useContext } from 'react';
+import { Context } from '../../App';
 import Salumi from './salumi/Salumi';
 import Stabilimento from './stabilimento/Stabilimento';
 import Contact from './contact/Contact';
@@ -7,8 +9,10 @@ import About from './about/About';
 import Home from './home/Home';
 
 const Main = () => {
+  const { menuToogle } = useContext(Context);
+
   return (
-    <div className='Main'>
+    <div className={`${menuToogle ? 'MainOff' : 'Main'}`}>
       <Switch>
         <Route path='/stabilimento'>
           <Stabilimento />
@@ -26,7 +30,6 @@ const Main = () => {
           <Home />
         </Route>
       </Switch>
-      
     </div>
   );
 };

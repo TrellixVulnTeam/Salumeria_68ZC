@@ -32,12 +32,16 @@
   font-size: x-large;
   color: #11100f;
 }
+.selected {
+  color: red;
+  transform: scale(2);
+}
 .iconsContainer {
   width: 100%;
 }
 .contactIcon {
   margin: 0 2.5%;
-  width: 20%; 
+  width: 20%;
 }
 #menuToggle {
   display: block;

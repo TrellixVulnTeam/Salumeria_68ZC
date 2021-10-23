@@ -1,5 +1,5 @@
 import Salume from './salume/Salume';
-import './salumi.css';
+import './salumi.scss';
 
 const Salumi = () => {
   return (
