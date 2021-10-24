@@ -2,13 +2,10 @@ import { useContext } from 'react';
 import { Context } from '../../App';
 import './burgerMenu.scss';
 import { NavLink } from 'react-router-dom';
-// import facebook from '../../../assets/icons/facebook.png';
-// import instagram from '../../../assets/icons/instagram.png';
-// import youtube from '../../../assets/icons/youtube.png';
-// import whatzapp from '../../../assets/icons/whatzapp.png';
-// import mail from '../../../assets/icons/mail.png';
-// import telefono from '../../../assets/icons/telefono.png';
-
+import facebook from '../../assets/icons/facebook.png';
+import whatzapp from '../../assets/icons/whatzapp.png';
+import mail from '../../assets/icons/mail.png';
+import telefono from '../../assets/icons/telefono.png';
 
 function BurgerMenu() {
   const { menuToogle, setMenuToogle } = useContext(Context);
@@ -45,7 +42,6 @@ function BurgerMenu() {
 
         {menuToogle && (
           <ul id='menu'>
-     
             <li>
               <NavLink
                 exact={true}
@@ -95,40 +91,46 @@ function BurgerMenu() {
             </li>
 
             <div className='iconsContainer'>
-              <div className='contactsContainer'>
-                <a
-                  className='navLink'
-                  href='https://wa.me/+393488733334'
-                  target='blank'
-                >
-                  <img
-                    className='contactIcon'
-                    id='whatzapp'
-                    // src={whatzapp}
-                    alt='whatzapp'
-                  />
-                </a>
-                <a
-                  className='navLink'
-                  href='mailto:sjmanca@gmail.com'
-                  target='blank'
-                >
-                  <img
-                    className='contactIcon'
-                    id='mail'
-                    // src={mail}
-                    alt='mail'
-                  />
-                </a>
-                <a className='navLink' href='tel:+393488733334' target='blank'>
-                  <img
-                    className='contactIcon'
-                    id='telefono'
-                    // src={telefono}
-                    alt='telefono'
-                  />
-                </a>
-              </div>
+              <a
+                className='navNavLink'
+                href='https://it-it.facebook.com/SalumificioArtigianaleMei/'
+                target='blank'
+              >
+                <img
+                  className='contactIcon'
+                  id='facebook'
+                  src={facebook}
+                  alt='facebook'
+                />
+              </a>
+              <a
+                className='navNavLink'
+                href='https://wa.me/+393456380585'
+                target='blank'
+              >
+                <img
+                  className='contactIcon'
+                  id='whatzapp'
+                  src={whatzapp}
+                  alt='whatzapp'
+                />
+              </a>
+
+              <a
+                className='navNavLink'
+                href='mailto:salumificiomei@hotmail.it'
+                target='blank'
+              >
+                <img className='contactIcon' id='mail' src={mail} alt='mail' />
+              </a>
+              <a className='navNavLink' href='tel:+393456380585' target='blank'>
+                <img
+                  className='contactIcon'
+                  id='telefono'
+                  src={telefono}
+                  alt='telefono'
+                />
+              </a>
             </div>
           </ul>
         )}
